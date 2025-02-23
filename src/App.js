@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import Greet from './Components/Greet'
-import Welcome from './Components/Welcome';
-import Hello from './Components/Hello';
+import Message from './Components/Message';
+import Counter from './Components/Counter'
 
 function App() {
   return (
@@ -14,9 +13,8 @@ function App() {
         <button>Action</button>
       </Greet>
       <Greet name='Clark' heroName = "Superman"/>
-      <Welcome name ='Hal' heroName = "Green Lantern"/>
-      <Welcome name = 'Oliver' heroName = "Green Arrow"/>
-      <Welcome name = 'Vic' heroName = "Cyborg"/>
+      <Message/>
+      <Counter addValue={3}/>
     </div>
   );
 }

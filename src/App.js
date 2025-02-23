@@ -3,6 +3,9 @@ import Greet from './Components/Greet'
 import Message from './Components/Message';
 import Counter from './Components/Counter'
 import Welcome from './Components/Welcome';
+import FuncClick from './Components/FuncClick';
+import ClassClick from './Components/ClassClick';
+import EventBind from './Components/EventBind';
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
       <Welcome name='Lachlan' heroName = 'Test User'/>
       <Message/>
       <Counter addValue={3}/>
+      <FuncClick/>
+      <ClassClick/>
+      <EventBind/>
     </div>
   );
 }

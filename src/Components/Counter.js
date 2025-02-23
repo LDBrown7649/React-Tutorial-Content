@@ -13,10 +13,11 @@ class Counter extends Component {
     increment() {
         const {count} = this.state;
         this.setState((prevState, props) => ({
-            count: prevState.count + props.addValue
-        }),
-        () => console.log(count)
-    );
+                    count: prevState.count + props.addValue
+                }
+            ),
+            () => console.log(count)
+        );
     }
 
     incrementFive() {

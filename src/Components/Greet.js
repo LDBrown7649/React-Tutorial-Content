@@ -1,14 +1,14 @@
 import React from 'react'
 
 const Greet = (props) => {
-    console.log(props)
+    const {name, heroName, children, overrideColor} = props;
     return (
         <div>
-            <h1>Hello {props.name} a.k.a {props.heroName}</h1>
-            <button style = {{backgroundColor: props.overrideColor ? props.overrideColor : "white", color:"red"}}>
+            <h1>Hello {name} a.k.a {heroName}</h1>
+            <button style = {{backgroundColor: overrideColor ? overrideColor : "white", color:"red"}}>
                 Text
             </button>
-            {props.children}
+            {children}
         </div>
     )
 }

@@ -2,6 +2,7 @@ import './App.css';
 import Greet from './Components/Greet'
 import Message from './Components/Message';
 import Counter from './Components/Counter'
+import Welcome from './Components/Welcome';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <button>Action</button>
       </Greet>
       <Greet name='Clark' heroName = "Superman"/>
+      <Welcome name='Lachlan' heroName = 'Test User'/>
       <Message/>
       <Counter addValue={3}/>
     </div>
